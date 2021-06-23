@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    background: white;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#glass{
+    min-height: 85vh;
+    width: 60%;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(5rem); 
+    display: flex;
+}
+
+#dashBoard{
+    flex:1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+    border-radius: 2rem;
+}
+
+#userPIC{
+    width:4rem;
+    height:4rem;
+    border-radius: 50%;;
+}
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 0.5rem 5rem;
+    align-items: center;
+  }
+  .link p {
+    padding: 0rem 2rem;
+  }
+  
+  .pro{
+    background: linear-gradient(316deg, #e1bc29 0%, #e36463 74%);
+    position: relative;
+    padding:1rem; 
+    border-radius: 2rem;
+  }
+  .pro img{
+      position: absolute;
+      top: -20%;
+      right: 10%; 
+  }
+  .pro p{
+      font-weight: 600;
+      color:white; 
+  }
+
+#games{
+    flex:2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* .userInput{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+} */
+.userInput input{
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.card {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+  }
+  .card img{
+      width: 5rem;
+      height:5rem;
+      border-radius: 50%;
+  }
+  .progress1 {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 80%;
+  }
+  .progress2 {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+  }
+  .progress3 {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress3::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 50%;
+  }
+  .percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+ 
+.circle1,
+.circle2,
+.circle3,
+.circle4
+{
+    width:20rem;
+    height:20rem;
+    position: absolute;
+    z-index: 2;
+    background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.3)
+  );
+   
+}
+
+.circle1{
+    top:1%;
+    right:10%;
+  
+    border-top-right-radius: 50%;
+}
+.circle2{
+ 
+    top:1%;
+    left:10%;
+    border-top-left-radius: 50%;
+}
+.circle3{
+    bottom:1%;
+    left:10%;
+ 
+    border-bottom-left-radius: 50%;
+}
+
+.circle4{
+   
+    bottom:1%;
+    right:10%;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+}
